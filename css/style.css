@@ -1,0 +1,80 @@
+/* All Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: sans-serif;
+    line-height: ;
+    font-weight: 400;
+    color: #444;
+}
+html{
+    /* Percentage of user's browser font size settings */
+    font-size: 62.5%;
+}
+
+/* All Common CSS End */
+
+.section_hero{
+    background-color: #fae5d3;
+    padding: 9.6rem 0;
+}
+
+
+.hero{
+    max-width: 130rem;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+.hero_feature_image{
+    width: 100%;
+}
+.heading_primary{
+    font-size: 5.2rem; 
+    font-weight: 700;
+    line-height: 1.05;
+    color: #333;
+    letter-spacing: -0.5px;
+    margin-bottom: 3.2rem;
+} 
+.hero_description{
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+}
+.btn:link, .btn:visited{
+    background-color: #e67e22;
+    font-size: 2rem;
+    color: white;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-full:link, .btn-full:visited{
+    background-color: #e67e22;
+    color: white;
+    transition: background-color .3s;
+}
+.btn-full:hover, .btn-full:active{
+    background-color: #cf711f;
+    color: white;
+}
+.btn-outline:link, .btn-outline:visited{
+    background-color: white;
+    color: #555;
+}
+.btn-outline:hover, .btn-outline:active{
+    background-color: #fae5d3;
+    box-shadow: inset 0 0 0 3px white;
+}
+.margin-right-sm{
+    margin-right: 1.6rem;
+}

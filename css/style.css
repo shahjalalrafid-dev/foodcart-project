@@ -68,7 +68,7 @@ html{
 .btn-full:link, .btn-full:visited{
     background-color: #e67e22;
     color: white;
-    transition: background-color .3s;
+    transition: all .3s;
 }
 .btn-full:hover, .btn-full:active{
     background-color: #cf711f;
@@ -172,6 +172,7 @@ html{
     font-size: 4.4rem;
     line-height: 1.2;
     margin-bottom: 9.6rem;
+    text-align: center;
 }
 .sub_heading{
     display: block;
@@ -181,6 +182,7 @@ html{
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     letter-spacing: .75px;
+    text-align: center;
 }
 .step_number{
     font-size: 8.6rem;
@@ -230,3 +232,131 @@ html{
     z-index: -1;
 }
 /* How it Work Section Design End */
+/* Feature Section Design Start */
+.section_featured{
+    padding: 4.8rem 0 3.2rem 0;
+}
+.heading_featured{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .75px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+.logos{
+    display: flex;
+    justify-content: space-around;
+}
+.logos img{
+    height: 3.2rem;
+    filter: brightness(0%);
+    opacity: .5;
+}
+/* Feature Section Design End */
+/* Section Meal Design Start */
+.section_meal{
+    padding: 9.6rem 0;
+}
+.grid_col_3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.meal_image{
+    width: 100%;
+}
+.meal_title{
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 3.2rem;
+}
+.meal_attributes{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.meal_attribute{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.meal_icon{
+    font-size: 2.4rem;
+    color: #e67e22;
+}
+strong{
+    font-weight: 500;
+}
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    border-radius: 100px;
+    color: #333;
+    font-weight: 600;
+}
+.meal_tags{
+    margin-bottom: 1.2rem;
+    display: flex;
+    gap: .4rem;
+}
+.meal{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: .4s;
+}
+.meal:hover{
+    transform: translate(0rem, -1.2rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.meal_content{
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.tag_paleo{
+    background-color: orangered;
+}
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.list_item ion-icon{
+    font-size: 3rem;
+    color: #e67e22;
+}
+.list_item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.margin_botom_md{
+    margin-bottom: 4.8rem;
+}
+.all_recipes{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.link:link, .link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all .5s;
+}
+.link:hover, .link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+.center_text{
+    text-align: center;
+}
+/* Section Meal Design End */

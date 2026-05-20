@@ -4,6 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+*:focus{
+    outline: none;
+    /* outline: 4px dotted #e67e22;
+    outline-offset: 8px; */
+    box-shadow: 0 0 0 .8rem #e67e22;
+}
+
 body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -519,3 +526,91 @@ strong {
     margin-bottom: 7rem;
 }
 /* Section pricing design End */
+
+/* Section Call to Action Part Design Start */
+.section_cta{
+    padding: 9.6rem 0;
+}
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #e67e22;
+    
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    overflow: hidden;
+}
+.cta_image_box{
+    background-image: url('../image/cta_image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: .7;
+}
+.cta_text_box{
+    padding:4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #2e1907;
+}
+.cta .heading_secondary{
+    color: #2e1907;
+    margin-bottom: 3.2rem;
+    text-align: left;
+}
+
+.cta_text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+.cta_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+}
+.cta_form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+.cta_form input, .cta_form select{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    color: inherit;
+}
+.cta_form input::placeholder{
+    color: #aaa;
+}
+
+.btn {
+    background-color: White;
+    font-size: 2rem;
+    color: black;
+    padding: 1.3rem 3.2rem;
+    border-radius: 9px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .5s;
+    align-self: end;
+}
+.btn:hover{
+    background-color: #cf711f;
+}
+.cta *:focus{
+    outline: none;
+    /* outline: 4px dotted #e67e22;
+    outline-offset: 8px; */
+    box-shadow: 0 0 0 .8rem #e67e22;
+}
+/* Section Call to Action Part Design End */

@@ -16,11 +16,13 @@ body {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     color: #444;
+    overflow-x: hidden;
 }
 
 html {
     /* Percentage of user's browser font size settings */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 /* All Common CSS End */
@@ -32,10 +34,33 @@ html {
     background-color: #fae5d3;
     height: 9.6rem;
     padding: 0 4.8rem;
+    position: relative;
 }
 
 .logo {
     height: 2.2rem;
+}
+
+.btn_mobile_nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.icon_mobile {
+    font-size: 4.8rem;
+    color: #cf711f;
+
+}
+.icon_mobile_close {
+    font-size: 4.8rem;
+    color: #cf711f;
+
+}
+
+.icon_mobile_close {
+    display: none;
 }
 
 .section_hero {
@@ -731,6 +756,7 @@ strong {
 
 .footer_heading {
     font-size: 1.8rem;
+    
     font-weight: 500;
     margin-bottom: 4rem;
 }
@@ -801,3 +827,216 @@ strong {
 }
 
 /* Footer Section Design End */
+
+/* Responsive Design Start for Small Laptop */
+/* Below 1344px Smaller Desktop */
+
+@media(max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+
+    .heading_primary {
+        font-size: 4.4rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.6rem;
+        padding: 1.6rem;
+    }
+}
+
+/* Below 1200px Laptop */
+@media(max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .heading_secondary {
+        font-size: 3.6rem;
+    }
+
+    .heading_tertiary {
+        font-size: 2.4rem;
+    }
+
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+
+    .header {
+        padding: 0 3.2rem;
+    }
+
+    .hero {
+        gap: 4.8rem;
+    }
+
+    .main_nav_list {
+        gap: 3.2rem;
+    }
+
+    .testimonial_container {
+        padding: 5rem 3.2rem;
+    }
+}
+
+/* Below 900px  */
+@media(max-width: 57em) {
+    html {
+        font-size: 50%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero_feature_image {
+        width: 60%;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .delivered_meals {
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    .logos img {
+        height: 2.4rem;
+    }
+
+    .section_testimonial {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 60fr 40fr;
+    }
+
+    .cta_form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        margin-top: 2rem;
+    }
+
+    .btn_mobile_nav {
+        display: block;
+    }
+
+    .main-nav {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all .5s;
+        pointer-events: none;
+        visibility: hidden;
+        transform: translateX(100%);
+
+    }
+    .nav_open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav_open .icon_mobile_close {
+    display: block;
+    }
+    .nav_open .icon_mobile {
+    display: none;
+    }
+
+    .main_nav_list {
+        flex-direction: column;
+        gap: 4.8rem;
+
+    }
+
+    .main_nav_link:link,
+    .main_nav_link:visited {
+
+        font-size: 3rem;
+    }
+}
+/* Below 704px */
+@media(max-width: 44em){
+    /* html{
+        font-size: 40%;
+    } */
+    .grid_col_3,
+    .grid_col_4 {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .diets{
+        justify-self: center;
+        grid-column: 1 / -1;
+    }
+    .pricing_plan{
+        width: 100%;
+    }
+    .grid_col_5 {
+    grid-template-columns: repeat(6, 1fr);
+    }
+    .nav_col{
+        grid-row: 1;
+        grid-column: span 2;
+    }
+    .logo_column, .address_column{
+        grid-column: span 3;
+    }
+}
+/* Below 554px */
+@media(max-width: 34em){
+    .grid_2_cols, .grid_col_3, .grid_col_4{
+        grid-template-columns: 1fr;
+    } 
+    .hero{
+        padding: 0 1.5rem;
+    }
+    .logos img{
+        height: 1.5rem;
+    }
+    .step_image_box:nth-child(2){
+        grid-row: 1;
+    }
+    .step_image_box:nth-child(6){
+        grid-row: 5;
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .cta{
+        grid-template-columns: 1fr;
+    }
+    .cta_image_box{
+        height: 32rem;
+        grid-row: 1;
+    }
+    .cta_text_box{
+        padding: 3.2rem;
+    }
+}
+
+/* Responsive Design End for Small Laptop */
